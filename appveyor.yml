@@ -47,8 +47,7 @@ cache:
 #         notifications           #
 #---------------------------------#
 notifications:
- #Slack
-  provider: Slack
+  - provider: Slack
     auth_token:
       secure: 7BRStXzJXLq22YXgdAsX6KJQhYShFzm8PIPDdz+X2yEIu0U5H6Ud2YVp2ARh+AIM
-    channel: #cvpz
+    channel: cvpz
