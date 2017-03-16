@@ -1,5 +1,10 @@
 version: '1.0.{build}'
 
+environment:
+  matrix:
+  - platform: x64
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+
 pull_requests:
   do_not_increment_build_number: true
 
@@ -9,21 +14,11 @@ configuration:
 
 platform: Any CPU
 
-install:
-  - git submodule update --init --recursive
-
 before_build:
   nuget restore
 
 cache:
   - packages -> **\packages.config
-
-assembly_info:
-  patch: true
-  file: AssemblyInfo.*
-  assembly_version: '{version}'
-  assembly_file_version: '{version}'
-  assembly_informational_version: '{version}'
 
 build:
   parallel: true
