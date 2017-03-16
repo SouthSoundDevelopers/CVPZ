@@ -24,7 +24,7 @@ pull_requests:
 #---------------------------------#
 
 # build platform, i.e. x86, x64, Any CPU. This setting is optional.
-platform: Any CPU
+#platform: Any CPU
 
 # build Configuration, i.e. Debug, Release, etc.
 configuration:
@@ -45,3 +45,13 @@ cache:
 
 
 
+#---------------------------------#
+#         notifications           #
+#---------------------------------#
+notifications:
+# Slack
+#  - provider: Slack
+#    auth_token:
+#      secure: kBl9BlxvRMr9liHmnBs14A==
+#    channel: development
+#    template: "{message}, {commitId}, ..."
