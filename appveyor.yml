@@ -13,7 +13,6 @@ version: '1.0.{build}'
 #---------------------------------#
 environment:
   matrix:
-  - platform: x64
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
 
 pull_requests:
@@ -24,7 +23,7 @@ pull_requests:
 #---------------------------------#
 
 # build platform, i.e. x86, x64, Any CPU. This setting is optional.
-#platform: Any CPU
+platform: Any CPU
 
 # build Configuration, i.e. Debug, Release, etc.
 configuration:
