@@ -38,10 +38,6 @@ build:
 before_build:
   nuget restore
 
-cache:
-  - packages -> **\packages.config
-
-
 
 #---------------------------------#
 #         notifications           #
