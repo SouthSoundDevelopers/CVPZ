@@ -1,5 +1,16 @@
+#reference here: https://www.appveyor.com/docs/appveyor-yml/
+
+#---------------------------------#
+#      general configuration      #
+#---------------------------------#
+
+# version format
 version: '1.0.{build}'
 
+
+#---------------------------------#
+#    environment configuration    #
+#---------------------------------#
 environment:
   matrix:
   - platform: x64
@@ -8,18 +19,29 @@ environment:
 pull_requests:
   do_not_increment_build_number: true
 
+#---------------------------------#
+#       build configuration       #
+#---------------------------------#
+
+# build platform, i.e. x86, x64, Any CPU. This setting is optional.
+platform: Any CPU
+
+# build Configuration, i.e. Debug, Release, etc.
 configuration:
 - Debug
 - Release
 
-platform: Any CPU
+build:
+  parallel: true                  # enable MSBuild parallel builds
+  verbosity: minimal              # MSBuild verbosity level
+  project: CVPZ.sln               # path to Visual Studio solution or project
 
+# scripts to run before build
 before_build:
   nuget restore
 
 cache:
   - packages -> **\packages.config
 
-build:
-  parallel: true
-  verbosity: minimal
+
+
