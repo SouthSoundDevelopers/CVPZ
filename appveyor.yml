@@ -48,7 +48,7 @@ cache:
 #---------------------------------#
 #         notifications           #
 #---------------------------------#
-notifications:
+#notifications:
 # Slack
 #  - provider: Slack
 #    auth_token:
