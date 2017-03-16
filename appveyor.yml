@@ -12,7 +12,8 @@ version: '1.0.{build}'
 #    environment configuration    #
 #---------------------------------#
 environment:
-  matrix:
+#  matrix:
+#  - platform: x64
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
 
 pull_requests:
