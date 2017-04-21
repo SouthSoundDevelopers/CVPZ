@@ -6,6 +6,7 @@ services:
     build:
       context: ./src/Services/Identity/Identity.api
       dockerfile: Dockerfile
+
   profile.api:
     image: cvpz/profile.api
     build:
