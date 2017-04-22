@@ -9,6 +9,7 @@ namespace Projects.api
         public static void Main(string[] args)
         {
             var configuration = new ConfigurationBuilder()
+                .AddEnvironmentVariables()
                 .AddCommandLine(args)
                 .Build();
 

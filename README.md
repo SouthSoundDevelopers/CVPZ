@@ -47,20 +47,42 @@ By having one common goal to work toward, we will share ideas and continually mo
 
 1. Install Docker for [Windows](https://download.docker.com/win/beta/InstallDocker.msi), [Mac](https://download.docker.com/mac/beta/Docker.dmg) or [Linux](https://docs.docker.com/engine/installation/linux/).
     - Note: Docker required x64 bit and is not supported on Windows Home editions. The [Docker-Toolbox](https://www.docker.com/products/docker-toolbox) can be installed instead. (Tutorial [here](https://docs.docker.com/toolbox/toolbox_install_windows))
-1. Install [.NET Core SDK 1.0](https://www.microsoft.com/net/download/core).  
+1. Install [.NET Core SDK 1.1](https://www.microsoft.com/net/download/core).  
 1. Install [Visual Studio Code](https://code.visualstudio.com/), the [Insiders Edition](https://code.visualstudio.com/insiders) is highly recommended.
 1. Clone the repository: `git clone https://github.com/ssdug/CVPZ.git`.
 1. Change directory into the cloned repository `cd CVPZ`.
 1. Restore packages: `dotnet restore .\CVPZ.sln`.
 1. Open the project in VSCode `code-insiders .` or `code .` depending on what version you chose to install.
 
-### Running Under Docker
+
+### Running Locally from PowerShell
 
 1. Open PowerShell.
 1. Change directory into the cloned repository `cd CVPZ`.
-1. Execute the command `docker-compose -f docker-compose.ci.build.yml up`.
-1. Execute the command `docker-compose up`
-1. Issue the command `curl http://localhost:5505/api/values` to confirm identity api is up.
-1. Issue the command `curl http://localhost:5502/api/values` to confirm the profile api is up.
-1. Issue the command `curl http://localhost:5503/api/values` to confirm the projects api is up.
-1. To shut down the image, hit `Ctrl-C`
+1. Execute the command `scripts\local_up.ps1`.
+	- This will build the project and start all services running in the background.
+1. Execute the command `scripts\local_ping.ps1`
+	- This will hit the `api/health/ping` endpoint on all services.
+1. To shut down the image, execute the command `scripts\local_down.ps1`
+
+### Running Under Docker from PowerShell
+
+1. Open PowerShell.
+1. Change directory into the cloned repository `cd CVPZ`.
+1. Execute the command `scripts\docker_up.ps1 -r -b`.
+	- This will build the project and start all services running in the background.
+1. Execute the command `scripts\local_ping.ps1`
+	- This will hit the `api/health/ping` endpoint on all services.
+1. To shut down the image, execute the command `scripts\docker_down.ps1`
+
+**Note:** Docker is configured to expose ports for each service, so the local_ping scripts works for both workflows.
+
+### Running Under Docker from Visual Studio 2017
+
+1. Open Visual Studio.
+1. Open the `CVPZ.sln`.
+1. Select either Debug or Release configuration.
+1. Right click the `docker-compose` project and select debug.
+
+**Note:** This starts up the application in docker and attaches a debugger. The debugger does not appear to work.
+
