@@ -6,7 +6,7 @@
 
 ## TOC
 
-- [What](#what), [Why](#why), [How](#how)
+- [Who](#who), [What](#what), [Why](#why), [How](#how)
 - [Getting Started](#getting-started)
 
   - [Running Locally from PowerShell](#running-locally-from-powershell)
@@ -20,6 +20,12 @@
   - [Profile Service](#profile-service)
   - [Engagement Service](#engagement-service)
   - [Continuous Integration](#continuous-integration)
+
+- [Sponsors](#sponsors)
+
+## Who
+
+CVPZ is a community project created by the South Sound Developers User Group ([SSDUG](http://ssdug.org)) in lovely [Olympia, WA](http://olympiawa.gov/). The group is led by [Eve Ragins](https://github.com/orgs/ssdug/people/emragins) and this project was started and led by [Carter Barnes](https://github.com/orgs/ssdug/people/CarBar).
 
 ## What
 
@@ -105,3 +111,16 @@ By having one common goal to work toward, we will share ideas and continually mo
 1. [Apveyor](https://www.appveyor.com/)
 1. [xUnit](https://xunit.github.io/)
 
+## Sponsors
+
+### CodeSmart, Inc
+
+Thank you to CodeSmart for providing space, pizza and beer for our initial kick off meeting.
+
+- [CVPZ Hack Night](https://www.meetup.com/ssdevelopers/events/238255202/) - March 16th, 2017
+
+### Kiehl Northwest
+
+Thank you to Kiehl for booking space, obtaining banquit license and providing pizza and beer for our second hackathon.
+
+- [CVPZ Hackathon II](https://www.meetup.com/ssdevelopers/events/239305202/) - May 4th, 2017
