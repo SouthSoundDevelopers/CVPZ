@@ -6,9 +6,7 @@
 
 ## TOC
 
-- [What](#what)
-- [Why](#why)
-- [How](#how)
+- [What](#what), [Why](#why), [How](#how)
 - [Getting Started](#getting-started)
 
   - [Running Locally from PowerShell](#running-locally-from-powershell)
