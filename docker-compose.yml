@@ -2,19 +2,19 @@ version: '2'
 
 services:
   identity.api:
-    image: cvpz/identity.api
+    image: identity.api
     build:
       context: ./src/Identity.api
       dockerfile: Dockerfile
 
   profile.api:
-    image: cvpz/profile.api
+    image: profile.api
     build:
       context: ./src/Profile.api
       dockerfile: Dockerfile
 
   projects.api:
-    image: cvpz/projects.api
+    image: projects.api
     build:
       context: ./src/Projects.api
       dockerfile: Dockerfile
