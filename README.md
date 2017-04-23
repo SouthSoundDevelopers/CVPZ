@@ -23,6 +23,8 @@
 
 - [Sponsors](#sponsors)
 
+  - [Become a Sponsor](#become-a-sponsor)
+
 ## Who
 
 CVPZ is a community project created by the South Sound Developers User Group ([SSDUG](http://ssdug.org)) in lovely [Olympia, WA](http://olympiawa.gov/). The group is led by [Eve Ragins](https://github.com/orgs/ssdug/people/emragins) and this project was started and led by [Carter Barnes](https://github.com/orgs/ssdug/people/CarBar).
@@ -113,14 +115,18 @@ By having one common goal to work toward, we will share ideas and continually mo
 
 ## Sponsors
 
-### CodeSmart, Inc
+### [CodeSmart, Inc](http://codesmartinc.com/)
 
 Thank you to CodeSmart for providing space, pizza and beer for our initial kick off meeting.
 
 - [CVPZ Hack Night](https://www.meetup.com/ssdevelopers/events/238255202/) - March 16th, 2017
 
-### Kiehl Northwest
+### [Kiehl Northwest](http://kiehlnorthwest.com/)
 
 Thank you to Kiehl for booking space, obtaining banquit license and providing pizza and beer for our second hackathon.
 
 - [CVPZ Hackathon II](https://www.meetup.com/ssdevelopers/events/239305202/) - May 4th, 2017
+
+### Become a Sponsor
+
+If you or your organization are interested in sponsoring a hackathon or a user group meeting, please contact us via [Meetup](https://www.meetup.com/ssdevelopers/). Just click the contact us button.
