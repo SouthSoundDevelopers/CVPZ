@@ -19,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_", "_", "{57790ECB-8061-46
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{238790F1-C009-44EA-9DB4-5E1B012755FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,10 +39,10 @@ Global
 		{ABE591BD-5B3B-440C-964A-0BF887296598}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABE591BD-5B3B-440C-964A-0BF887296598}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABE591BD-5B3B-440C-964A-0BF887296598}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8988E09D-3BA7-4FFA-89F6-219B102AD8D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8988E09D-3BA7-4FFA-89F6-219B102AD8D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8988E09D-3BA7-4FFA-89F6-219B102AD8D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8988E09D-3BA7-4FFA-89F6-219B102AD8D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{238790F1-C009-44EA-9DB4-5E1B012755FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{238790F1-C009-44EA-9DB4-5E1B012755FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{238790F1-C009-44EA-9DB4-5E1B012755FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{238790F1-C009-44EA-9DB4-5E1B012755FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
