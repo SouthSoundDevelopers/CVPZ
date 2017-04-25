@@ -1,4 +1,4 @@
-﻿{
+{
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
@@ -14,7 +14,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Projects.api": {
+    "CVPZ.Projects": {
       "commandName": "Project",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

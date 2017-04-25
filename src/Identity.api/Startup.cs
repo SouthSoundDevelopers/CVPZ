@@ -3,6 +3,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using IdentityServer4.Models;
+using System.Security.Claims;
+using IdentityModel;
 
 namespace Identity.api
 {
@@ -23,6 +26,11 @@ namespace Identity.api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddIdentityServer()
+                .AddInMemoryClients(Config.GetClients())
+                .AddInMemoryApiResources(Config.GetApiResources())
+                .AddTemporarySigningCredential();
+
             // Add framework services.
             services.AddMvc();
         }
@@ -30,10 +38,13 @@ namespace Identity.api
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            app.UseIdentityServer();
+
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
             app.UseMvc();
         }
+
     }
 }

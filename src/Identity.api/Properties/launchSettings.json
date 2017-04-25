@@ -14,7 +14,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Identity.api": {
+    "CVPZ.Identity": {
       "commandName": "Project",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

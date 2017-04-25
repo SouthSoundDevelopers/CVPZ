@@ -14,7 +14,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Profile.api": {
+    "CVPZ.Profile": {
       "commandName": "Project",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
