@@ -4,6 +4,7 @@ services:
 
   webui:
     image: cvpz/webui
+    container_name: webui
     build:
       context: ./src/WebUI
       dockerfile: Dockerfile
@@ -16,6 +17,7 @@ services:
 
   profile.api:
     image: cvpz/profile.api
+    container_name: profile_api
     build:
       context: ./src/Profile.api
       dockerfile: Dockerfile
