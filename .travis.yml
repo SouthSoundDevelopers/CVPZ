@@ -38,7 +38,7 @@ script:
   - docker-compose -f docker-compose.yml -f docker-compose.override.yml  -p CVPZ up -d --build
   - docker ps
   - docker logs cvpz_identity.api_1
-  - curl http://ci.cvpz.io
+  - curl http://ci.cvpz.io:5000
   - curl http://ci.cvpz.io:5001/api/health/ping
   - curl http://ci.cvpz.io:5002/api/health/ping
   - curl http://ci.cvpz.io:5003/api/health/ping
