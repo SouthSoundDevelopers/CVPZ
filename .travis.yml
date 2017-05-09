@@ -27,22 +27,21 @@ addons:
 #---------------------------------#
 
 install:
-#  - docker pull alexsuch/angular-cli:latest
+  - docker pull alexsuch/angular-cli:latest
   - docker pull microsoft/aspnetcore-build:1.0-1.1
   - docker pull microsoft/aspnetcore:1.1
-#  - docker pull nginx:latest
+  - docker pull nginx:latest
   
 script:
   - docker-compose -f docker-compose.ci.build.yml run ci-build-netcore
-#  - docker-compose -f docker-compose.ci.build.yml run ci-build-angular
+  - docker-compose -f docker-compose.ci.build.yml run ci-build-angular
   - docker-compose -f docker-compose.yml -f docker-compose.override.yml -p CVPZ up -d --build
   - sleep 30 #give services a chance to come up
   - docker ps
-  - docker logs profile_api
- # - curl http://ci.cvpz.io:5000
-#  - curl http://ci.cvpz.io:5001/api/health/ping
-  - curl http://ci.cvpz.io:5002
-#  - curl http://ci.cvpz.io:5003/api/health/ping
+  - curl http://ci.cvpz.io:5000
+  - curl http://ci.cvpz.io:5001/api/health/ping
+  - curl http://ci.cvpz.io:5002/api/health/ping
+  - curl http://ci.cvpz.io:5003/api/health/ping
 
 #---------------------------------#
 #         notifications           #
