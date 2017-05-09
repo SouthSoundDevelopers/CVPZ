@@ -2,12 +2,12 @@ version: '2'
 
 services:
 
-  webui:
-    image: cvpz/webui
-    container_name: webui
-    build:
-      context: ./src/WebUI
-      dockerfile: Dockerfile
+#  webui:
+#    image: cvpz/webui
+#    container_name: webui
+#    build:
+#      context: ./src/WebUI
+#      dockerfile: Dockerfile
       
 #  identity.api:
 #    image: cvpz/identity.api
