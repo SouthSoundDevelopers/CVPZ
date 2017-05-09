@@ -8,6 +8,7 @@
 #---------------------------------#
 #    environment configuration    #
 #---------------------------------#
+
 sudo: required
 language: csharp
 mono: none
@@ -36,7 +37,7 @@ script:
   - docker-compose -f docker-compose.ci.build.yml run ci-build-netcore
   - docker-compose -f docker-compose.ci.build.yml run ci-build-angular
   - docker-compose -f docker-compose.yml -f docker-compose.override.yml -p CVPZ up -d --build
-  - sleep 30 #give services a chance to come up
+  - sleep 30 
   - docker ps
   - curl http://ci.cvpz.io:5000
   - curl http://ci.cvpz.io:5001/api/health/ping
