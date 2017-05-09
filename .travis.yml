@@ -42,11 +42,11 @@ script:
   - curl http://ci.cvpz.io:5001/api/health/ping
   - curl http://ci.cvpz.io:5002/api/health/ping
   - curl http://ci.cvpz.io:5003/api/health/ping
-
+ 
 #---------------------------------#
 #         notifications           #
 #---------------------------------#
-# notifications:
-#   slack:
-#     rooms:
-#       secure: B1up2K85CJaKD6fLwlXwsZXwBT3k2RZX+FCxu0btAhPA5s+M9dlGfF/9DyWid6MUWvurPZ0jXlTv26W7nm1PoNCZi+4GOA7AKKaJworvCaihed13mNf54sdp3t4HXwwyJRqQncN5SaR57SQcxURqFz19mUfjilDeJp27vObm/dJf8al2bbaxLLkSOKY/nC0CyrGD7Sp899ezDt581sNLKBA6Q9dtE3txKtS0pqYBWFmr15BDoM8lqbm6ncpcow3GuGFmar9o3+xEEJ/VphdRiQPnjfEicy3400ScaiHAtyQOxJmEzUmJiiZZ51B9aJBp6Jm3MDMkYHHdWNGySOaDUQsBBqk9ZhdwgKB0ip8gdtddTLUS+UC0Hq4u8h+uwP02K9NqsQLUiGHscrpr0ST+IczXCnVJaoErTJKB0KaMICZIOWQMNNgIl8Wh3idp07NfXqhDGBzlH5eB26Zu0MwjBMwvL54mFdmcz724UaF0LXJEKzp3B+oY51p9bUT1IlibQRNMGirZuZgjP/fQ9V9E+A4P1120O7ca2AJqj7WF90oLFqZ8ZUtSgrRqdPzwDt5Wt/kIV+Kexp1kEgo+RQX8IYMzGkpCTEbzg+41S3GpwvwCcd4PiypUN6G0UwEtsNQdOYFQQEn+THBvzMHLaJmxHvaWnqh1Fk+4FAkmJfeB3+4=
+ notifications:
+   slack:
+     rooms:
+       secure: B1up2K85CJaKD6fLwlXwsZXwBT3k2RZX+FCxu0btAhPA5s+M9dlGfF/9DyWid6MUWvurPZ0jXlTv26W7nm1PoNCZi+4GOA7AKKaJworvCaihed13mNf54sdp3t4HXwwyJRqQncN5SaR57SQcxURqFz19mUfjilDeJp27vObm/dJf8al2bbaxLLkSOKY/nC0CyrGD7Sp899ezDt581sNLKBA6Q9dtE3txKtS0pqYBWFmr15BDoM8lqbm6ncpcow3GuGFmar9o3+xEEJ/VphdRiQPnjfEicy3400ScaiHAtyQOxJmEzUmJiiZZ51B9aJBp6Jm3MDMkYHHdWNGySOaDUQsBBqk9ZhdwgKB0ip8gdtddTLUS+UC0Hq4u8h+uwP02K9NqsQLUiGHscrpr0ST+IczXCnVJaoErTJKB0KaMICZIOWQMNNgIl8Wh3idp07NfXqhDGBzlH5eB26Zu0MwjBMwvL54mFdmcz724UaF0LXJEKzp3B+oY51p9bUT1IlibQRNMGirZuZgjP/fQ9V9E+A4P1120O7ca2AJqj7WF90oLFqZ8ZUtSgrRqdPzwDt5Wt/kIV+Kexp1kEgo+RQX8IYMzGkpCTEbzg+41S3GpwvwCcd4PiypUN6G0UwEtsNQdOYFQQEn+THBvzMHLaJmxHvaWnqh1Fk+4FAkmJfeB3+4=
