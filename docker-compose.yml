@@ -52,7 +52,7 @@ services:
       context: ./src/Projects.api
       dockerfile: Dockerfile
     links:
-      mongodb
+      - mongodb
     networks:
       - cvpz
 
