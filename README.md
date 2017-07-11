@@ -10,7 +10,7 @@
 - [Getting Started](#getting-started)
 
   - [Running Locally from PowerShell](#running-locally-from-powershell)
-  - [Running Under Docker from PowerShell](#running-under-docker-from-powershell)
+  - [Running Under Docker from PowerShell or Bash](#running-under-docker-from-powershell-or-bash)
   - [Running Under Docker from Visual Studio 2017](#running-under-docker-from-visual-studio-2017)
 
 - [Architecture](#architecture)
