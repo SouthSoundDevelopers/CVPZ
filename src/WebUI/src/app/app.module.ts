@@ -11,8 +11,9 @@ import { SystemStatusComponent } from './system-status/system-status.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AuthGuardService } from './services/auth-guard.service';
 import { AuthService } from './services/auth.service';
-import { ProtectedComponent } from './protected/protected.component';
 import { AuthCallbackComponent } from './auth-callback/auth-callback.component';
+import { LoginInfoComponent } from './login-info/login-info.component';
+import { LoginComponent } from './login/login.component'; 
 import { CallApiComponent } from './call-api/call-api.component';
 
 //import { AuthModule, OidcSecurityService, OpenIDImplicitFlowConfiguration } from 'angular-auth-oidc-client';
@@ -21,8 +22,9 @@ import { CallApiComponent } from './call-api/call-api.component';
   declarations: [
     AppComponent,
     SystemStatusComponent,
-    ProtectedComponent,
     AuthCallbackComponent,
+    LoginInfoComponent,
+    LoginComponent,
     CallApiComponent
   ],
   imports: [

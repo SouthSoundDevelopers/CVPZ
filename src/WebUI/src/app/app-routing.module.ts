@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ProtectedComponent } from './protected/protected.component';
+import { LoginComponent } from './login/login.component';
 import { AuthGuardService } from './services/auth-guard.service';
 import { AuthCallbackComponent } from './auth-callback/auth-callback.component';
 import { CallApiComponent } from './call-api/call-api.component';
+import { SystemStatusComponent } from './system-status/system-status.component';
 
 const routes: Routes = [
   {
@@ -12,8 +13,8 @@ const routes: Routes = [
     children: []
   },
   {
-    path: 'protected',
-    component: ProtectedComponent,
+    path: 'login',
+    component: LoginComponent,
     canActivate: [AuthGuardService]
   },
   {
@@ -24,8 +25,11 @@ const routes: Routes = [
     path: 'call-api',
     component: CallApiComponent,
     canActivate: [AuthGuardService]
-  }
-];
+  },
+  {
+    path: 'system-status',
+    component: SystemStatusComponent
+  }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
