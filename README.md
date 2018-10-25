@@ -10,16 +10,6 @@
 - [Getting Started](#getting-started)
 
   - [Running Locally from PowerShell](#running-locally-from-powershell)
-  - [Running Under Docker from PowerShell or Bash](#running-under-docker-from-powershell-or-bash)
-  - [Running Under Docker from Visual Studio 2017](#running-under-docker-from-visual-studio-2017)
-
-- [Architecture](#architecture)
-
-  - [Identity Service](#identity-service)
-  - [Web Interface](#web-interface)
-  - [Profile Service](#profile-service)
-  - [Engagement Service](#engagement-service)
-  - [Continuous Integration](#continuous-integration)
 
 - [Sponsors](#sponsors)
 
@@ -43,9 +33,6 @@ By having one common goal to work toward, we will share ideas and continually mo
 
 ## Getting Started
 
-1. Install Docker for [Windows](https://download.docker.com/win/beta/InstallDocker.msi), [Mac](https://download.docker.com/mac/beta/Docker.dmg) or [Linux](https://docs.docker.com/engine/installation/linux/).
-    - Note: Docker required x64 bit and is not supported on Windows Home editions. The [Docker-Toolbox](https://www.docker.com/products/docker-toolbox) can be installed instead. (Tutorial [here](https://docs.docker.com/toolbox/toolbox_install_windows))
-    - Further Note: It was discoved that there is a compatibility problem with CVPZ and the docker toolbox for version 17.03 and earlier.  The problem was resolved in the most recent release (17.04.0.ce).  To ensure your docker toolbox is up to date, run the command `docker version`.
 1. Install [.NET Core SDK 2.0](https://www.microsoft.com/net/download/core).
 1. Install [Visual Studio Code](https://code.visualstudio.com/), the [Insiders Edition](https://code.visualstudio.com/insiders) is highly recommended.
 1. Clone the repository: `git clone https://github.com/ssdug/CVPZ.git`.
@@ -54,69 +41,12 @@ By having one common goal to work toward, we will share ideas and continually mo
 1. Open the project in VSCode `code-insiders .` or `code .` depending on what version you chose to install.
     - Note: On Mac OS: after installing, open up VS Code, Press: Command + Shift + P and then type in and select `Shell Command : Install 'code' command in PATH`.  This will enable you to open VS Code from Terminal with the `code .` command.
 
-
 ### Running Locally from PowerShell
 
 1. Open PowerShell.
-1. Change directory into the cloned repository `cd CVPZ`.
-1. Execute the command `scripts\local_up.ps1`.
+1. Change directory into the cloned repository `cd CVPZ/src/cvpz.web`.
+1. Execute the command `dotnet run`.
     - This will build the project and start all services running in the background.
-1. Execute the command `scripts\local_ping.ps1`
-    - This will hit the `api/health/ping` endpoint on all services.
-1. To shut down the image, execute the command `scripts\local_down.ps1`
-
-### Running Under Docker from PowerShell or Bash
-
-1. Ensure Docker for Windows is running and set to Linux containers.
-1. Open PowerShell.
-1. Change directory into the cloned repository `cd CVPZ`.
-1. Execute the command `scripts\docker_up -r -b`.
-	- This will build the project and start all services running in the background.
-1. Execute the command `scripts\services_ping`
-	- This will hit the `api/health/ping` endpoint on all services.
-1. To shut down the image, execute the command `scripts\docker_down`
-
-**Note:** Docker is configured to expose ports for each service, so the services_ping scripts works for both workflows.
-
-**Note:** Under Bash scripts are run with the sudo command, so you may be prompted for your password when running them.
-
-### Running Under Docker from Visual Studio 2017
-
-1. Ensure Docker for Windows is running and set to Linux containers.
-1. Open Visual Studio.
-1. Open the `CVPZ.sln`.
-1. Select either Debug or Release configuration.
-1. Right click the `docker-compose` project and select debug.
-
-
-## Architecture
-
-### Identity Service
-
-1. [IdentityServer 4](https://github.com/IdentityServer/IdentityServer4)
-1. [OAuth](https://oauth.net/2/)
-
-### Web Interface
-
-1. [Angular2](http://learnangular2.com/)
-1. [Node](https://nodejs.org/en/)
-1. [Bootstrap](https://v4-alpha.getbootstrap.com/)
-
-### Profile Service
-
-1. [.Net Core Api](https://docs.microsoft.com/en-us/dotnet/core/api/)
-1. [MongoDB](https://www.mongodb.com/)
-
-### Engagement Service
-
-1. [.Net Core Api](https://docs.microsoft.com/en-us/dotnet/core/api/)
-1. How to query Skills
-1. How to query Avalability
-
-### Continuous Integration
-
-1. [Apveyor](https://www.appveyor.com/)
-1. [xUnit](https://xunit.github.io/)
 
 ## Sponsors
 
