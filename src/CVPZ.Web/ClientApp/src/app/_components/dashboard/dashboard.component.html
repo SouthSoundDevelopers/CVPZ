@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 top-space">
+      <h1>Home</h1>
+      <p>Welcome {{currentUser.firstName + currentUser.lastName}}!You're logged into the CVPZ Dashboard!</p>
+      <div>
+        List of registered users:
+        <ul>
+          <li *ngFor="let user of users">{{user.firstName}} {{user.lastName}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
