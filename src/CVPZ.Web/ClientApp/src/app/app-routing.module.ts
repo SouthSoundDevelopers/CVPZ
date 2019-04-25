@@ -11,6 +11,10 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
+  {
+    path: 'profile',
+    loadChildren: 'app/modules/profile/profile.module#ProfileModule'
+  },
   { path: '**', redirectTo: '' }
 ];
 
