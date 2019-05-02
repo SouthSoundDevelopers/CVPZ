@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AccountProfileComponent } from './components/account-profile/account-profile.component';
+
+import { ProfileDetailComponent } from './components/profile-detail/profile-detail.component';
 
 const routes: Routes = [
   {
     path: 'profile',
     children: [
       {
-        path: 'account',
-        component: AccountProfileComponent
+        path: '',
+        component: ProfileDetailComponent
       }
     ]
   }];
