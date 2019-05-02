@@ -28,7 +28,7 @@ import { JwtInterceptor } from './_helpers/jwt.interceptor'
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [
     UserService,
