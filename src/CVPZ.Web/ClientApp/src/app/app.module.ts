@@ -15,8 +15,6 @@ import { AuthenticationService } from './_services/authentication.service';
 import { ErrorInterceptor } from './_helpers/error.interceptor'
 import { JwtInterceptor } from './_helpers/jwt.interceptor'
 
-import { ProfileModule } from './modules/profile/profile.module';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +29,6 @@ import { ProfileModule } from './modules/profile/profile.module';
     HttpClientModule,
     NgbModule,
     ReactiveFormsModule,
-    ProfileModule,
   ],
   providers: [
     UserService,

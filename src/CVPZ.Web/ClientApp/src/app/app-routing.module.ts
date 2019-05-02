@@ -13,13 +13,17 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   {
     path: 'profile',
-    loadChildren: 'app/modules/profile/profile.module#ProfileModule'
+    loadChildren: './modules/profile/profile.module#ProfileModule'
   },
-  { path: '**', redirectTo: '' }
+  {
+    path: '',
+    redirectTo: '',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { enableTracing: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
