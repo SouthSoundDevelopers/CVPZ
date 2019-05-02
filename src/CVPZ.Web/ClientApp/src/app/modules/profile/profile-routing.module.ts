@@ -4,15 +4,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { ProfileDetailComponent } from './components/profile-detail/profile-detail.component';
 
 const routes: Routes = [
-  {
-    path: 'profile',
-    children: [
-      {
-        path: '',
-        component: ProfileDetailComponent
-      }
-    ]
-  }];
+    {
+      path: '', //Default route
+      component: ProfileDetailComponent
+    }
+  ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
