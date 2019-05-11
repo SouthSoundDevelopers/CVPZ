@@ -1,6 +1,4 @@
 using AutoMapper;
-using CVPZ.Web.Dtos;
-using CVPZ.Web.Models;
 
 namespace CVPZ.Web.Helpers
 {
@@ -8,8 +6,8 @@ namespace CVPZ.Web.Helpers
     {
         public AutoMapperProfile()
         {
-            CreateMap<User, UserDto>();
-            CreateMap<UserDto, User>();
+            CreateMap<Models.User, Dtos.UserDto>();
+            CreateMap<Dtos.UserDto, Models.User>();
         }
     }
 }

@@ -13,7 +13,8 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   {
     path: 'profile',
-    loadChildren: './modules/profile/profile.module#ProfileModule'
+    loadChildren: './modules/profile/profile.module#ProfileModule',
+    canActivate: [AuthGuard]
   },
   {
     path: '',
